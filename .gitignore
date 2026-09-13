@@ -1,0 +1,106 @@
+# ==============================================================================
+# Critical Zero-Leak Environment & Secret Protection Rules
+# ==============================================================================
+.env*
+!.env.example
+!**/.env.example
+*.env
+*.env.*
+*.env.local
+*.env.production
+*.env.development
+*.env.test
+
+# Certificates, Keys, and Sensitive Files
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+secrets/
+.secrets/
+credentials.json
+
+# ==============================================================================
+# Python & Virtual Environments
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+# Python virtual environment folders at root
+/lib/
+/lib64/
+!frontend/src/lib/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Pytest & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# ==============================================================================
+# Node.js & Next.js Build Artifacts
+# ==============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+.next/
+out/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+.turbo/
+coverage/
+
+# ==============================================================================
+# Database & Runtime Logs
+# ==============================================================================
+*.log
+*.sqlite
+*.sqlite3
+*.db
+
+# ==============================================================================
+# OS & IDE System Files
+# ==============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE Configurations
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
